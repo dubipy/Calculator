@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>계산기</title>
+    <script src="https://kit.fontawesome.com/bc01ba7207.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="calculator">
+        <div class="status-bar">
+            <div class="status-bar__column status-bar__column-time">
+                <span>15:36</span>
+            </div>
+            <div class="status-bar__column">
+                <i class="fa-solid fa-align-left fa-sm"></i>
+                <i class="fa-solid fa-wifi fa-sm"></i>
+                <i class="fa-solid fa-battery-full fa-sm"></i>
+            </div>
+        </div>
+        <section class="answer"></section>
+    </div>
+
+    <script src="./time.js"></script>
 </body>
 </html>
