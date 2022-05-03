@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>계산기</title>
-    <script src="https://kit.fontawesome.com/bc01ba7207.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="calculator">
-        <div class="status-bar">
-            <div class="status-bar__column status-bar__column-time">
-                <span>15:36</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>계산기</title>
+        <script src="https://kit.fontawesome.com/bc01ba7207.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="status-bar">
+                <div class="status-bar__column status-bar__column-time">
+                    <span>15:36</span>
+                </div>
+                <div class="status-bar__column">
+                    <i class="fa-solid fa-align-left fa-sm"></i>
+                    <i class="fa-solid fa-wifi fa-sm"></i>
+                    <i class="fa-solid fa-battery-full fa-sm"></i>
+                </div>
             </div>
-            <div class="status-bar__column">
-                <i class="fa-solid fa-align-left fa-sm"></i>
-                <i class="fa-solid fa-wifi fa-sm"></i>
-                <i class="fa-solid fa-battery-full fa-sm"></i>
+            <section class="calculator__display--for-advanced">0</section>
+            <div class="calculator__button">
+                <div class="calculator__button__enter">
+                    <button class="clear">AC</button>
+                    <button class="calculate">Enter</button>
+                </div>
+                <div class="button__row">
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator button-blue">X</button>
+                </div>
+                <div class="button__row">
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator button-blue">-</button>
+                </div>
+                <div class="button__row">
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator button-blue">+</button>
+                </div>
+                <div class="button__row">
+                    <button class="number button-double">0</button>
+                    <button class="decimal button-blue">.</button>
+                    <button class="equl button-blue">=</button>
+                </div>
             </div>
         </div>
-        <section class="answer"></section>
-    </div>
 
-    <script src="./time.js"></script>
-</body>
+        <script src="./time.js"></script>
+    </body>
 </html>
