@@ -18,7 +18,7 @@ body {
     background: var(--buttonBackground);
     width: 290px;
     height: 500px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 25px;
 }
 
@@ -26,11 +26,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.status-bar__column {
+    width: 33%;
+}
+
+.status-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .status-bar__column span{
     font-size: 12px;
+}
+
+.status-bar__column i {
+    margin-right: 2px;
 }
 
 .calculator__display--bare {
@@ -119,3 +138,47 @@ body {
 .button__row .button-blue {
     color: var(--blue);
 }
+
+/* toggle */
+.tgl {
+    display: none;
+  }
+  .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 2em;
+    height: 1em;
+    position: relative;
+    cursor: pointer;
+  }
+  .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+  }
+  .tgl + .tgl-btn:after {
+    left: 0;
+  }
+  .tgl + .tgl-btn:before {
+    display: none;
+  }
+  .tgl:checked + .tgl-btn:after {
+    left: 50%;
+  }
+  
+  .tgl-light + .tgl-btn {
+    background: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+  }
+  .tgl-light + .tgl-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.2s ease;
+  }
+  .tgl-light:checked + .tgl-btn {
+    background: #9FD6AE;
+  }
