@@ -180,5 +180,5 @@ body {
     transition: all 0.2s ease;
   }
   .tgl-light:checked + .tgl-btn {
-    background: #9FD6AE;
+    background: #4D96FF;
   }
